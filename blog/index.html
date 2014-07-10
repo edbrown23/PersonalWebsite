@@ -1,39 +1,25 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-  
-  <head>
-    <meta charset="utf-8">
-    <title>
-      Eric Brown's Information
-    </title>
-    {% include BootstrapSources.html %}
-  </head>
-  
-  <body>
-    {% include NavBar.html %}
-    <div class="container">
-      <div class="well">
-        <div>
-          <h1>
-            Recent Blog Posts
-          </h1>
-        </div>
-      </div>
-        {% for post in site.posts %}
-        <div class="well">
-          <div>
-            <h3><a style="color: #000000" href="{{ post.url }}/">{{ post.title }}</a></h3>
-          </div>
-          <div>
-            <p style="font-size: 9px; font-color: #C0C0C0">Posted By: Eric Brown, Date Posted: {{ post.date }}</p>
-          </div>
-          <div class="content font-size: 13px;">
-            {{ post.excerpt }}
-          </div>
-        </div>
-        {% endfor %}
-    </div>
-  </body>
-</html>
+<div class="container">
+<div class="well">
+<div>
+  <h1>
+    Recent Blog Posts
+  </h1>
+</div>
+</div>
+{% for post in site.posts %}
+<div class="well">
+  <div>
+    <h3><a style="color: #000000" href="{{ post.url }}/">{{ post.title }}</a></h3>
+  </div>
+  <div>
+    <p style="font-size: 9px; font-color: #C0C0C0">Posted By: Eric Brown, Date Posted: {{ post.date }}</p>
+  </div>
+  <div class="content font-size: 13px;">
+    {{ post.excerpt }}
+  </div>
+</div>
+{% endfor %}
+</div>
