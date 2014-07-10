@@ -1,38 +1,25 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-  
-  <head>
-    <meta charset="utf-8">
-    <title>
-      Eric Brown's Projects
-    </title>
-    {% include BootstrapSources.html %}
-  </head>
-  <body>
-    {% include NavBar.html %}
-    <div class="container">
-      <div class="well">
-        <div>
-          <h1>
-            Eric Brown's Projects
-          </h1>
-          <p>
-            Click on one of the links below for a description of each project, along with links to the source.
-          </p>
-        </div>
-      </div>
-        {% for project in site.projects %}
-        <div class="well">
-          <div>
-            <h3><a style="color: #000000" href="{{ project.url }}">{{ project.title }}</a></h3>
-          </div>
-          <div class="content font-size: 13px;">
-            {{ project.url }}
-          </div>
-        </div>
-        {% endfor %}
-    </div>
-  </body>
-</html>
+<div class="container">
+<div class="well">
+<div>
+  <h1>
+    Eric Brown's Projects
+  </h1>
+  <p>
+    Click on one of the links below for a description of each project, along with links to the source.
+  </p>
+</div>
+</div>
+{% for project in site.projects %}
+<div class="well">
+  <div>
+    <h3><a style="color: #000000" href="{{ project.url }}">{{ project.title }}</a></h3>
+  </div>
+  <div class="content font-size: 13px;">
+    {{ project.url }}
+  </div>
+</div>
+{% endfor %}
+</div>
