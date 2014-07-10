@@ -1,63 +1,50 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-  
-  <head>
-    <meta charset="utf-8">
-    <title>
-      Experiments
-    </title>
-    {% include BootstrapSources.html %}
-    <script type="text/javascript" src="/js/traffic.js"></script>
-  </head>
-  <body>
-    {% include NavBar.html %}
-    <div class="container">
-      <div class="well">
-        <canvas id="canvas" width="1130" height="745">
-          <img src="http://yiyinglu.com/portfolio_images/failwhale/lifting-a-dreamer-2009.jpg" />
-        </canvas>
-        <h2>Experimentation Zone!</h2>
-        <p>
-          Check out some <a href="/experiments/verlet/">verlet integration!</a>
-        <p>
-          This page is an area for some experimentation with the canvas tag and javascript. Feel 
-          free to play around. The controls are described below, for reference.
-        </p>
-        <p>
-          Congestion on edges is conveyed by their color. A completely green edge is not congested,
-          and a completely red edge is completely congested. The more entities on an edge, the 
-          higher the congestion.
-        </p>
-        <h3>Controls</h3>
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th>Control</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Left Click</td>
-              <td>Create/Select a vertex</td>
-            </tr>
-            <tr>
-              <td>Shift Left Click</td>
-              <td>Create an edge</td>
-            </tr>
-            <tr>
-              <td>n</td>
-              <td>Spawn an entity</td>
-            </tr>
-            <tr>
-              <td>Space Bar</td>
-              <td>Pause the simulation</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </body>
-</html>
+<div class="container">
+<div class="well">
+<canvas id="canvas" width="1130" height="745">
+  <img src="http://yiyinglu.com/portfolio_images/failwhale/lifting-a-dreamer-2009.jpg" />
+</canvas>
+<h2>Experimentation Zone!</h2>
+<p>
+  Check out some <a href="/experiments/verlet/">verlet integration!</a>
+<p>
+  This page is an area for some experimentation with the canvas tag and javascript. Feel 
+  free to play around. The controls are described below, for reference.
+</p>
+<p>
+  Congestion on edges is conveyed by their color. A completely green edge is not congested,
+  and a completely red edge is completely congested. The more entities on an edge, the 
+  higher the congestion.
+</p>
+<h3>Controls</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Control</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Left Click</td>
+      <td>Create/Select a vertex</td>
+    </tr>
+    <tr>
+      <td>Shift Left Click</td>
+      <td>Create an edge</td>
+    </tr>
+    <tr>
+      <td>n</td>
+      <td>Spawn an entity</td>
+    </tr>
+    <tr>
+      <td>Space Bar</td>
+      <td>Pause the simulation</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<script type="text/javascript" src="/js/traffic.js"></script>
