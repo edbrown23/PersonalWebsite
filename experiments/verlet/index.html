@@ -1,0 +1,46 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Experiments
+    </title>
+    {% include BootstrapSources.html %}
+    <script type="text/javascript" src="/js/verlet.js"></script>
+  </head>
+  <body>
+    {% include NavBar.html %}
+    <div class="container">
+      <div class="well">
+        <canvas id="canvas" width="1130" height="745">
+          <img src="http://yiyinglu.com/portfolio_images/failwhale/lifting-a-dreamer-2009.jpg" />
+        </canvas>
+        <h2>Verlet Integration!</h2>
+        <p>This is a Javascript translation of the source code and tutorial on Verlet Integration found <a href="http://gamedev.tutsplus.com/tutorials/implementation/simulate-fabric-and-ragdolls-with-simple-verlet-integration/" target="_blank">here</a>. I have every intention of modifying and improving the code soon, with the ultimate goal of creating some form of skeletal animation system. However, that will likely have to wait until after graduation. In the meantime, feel free to play with the cloth simulation above.
+        </p>
+        <h3>Controls</h3>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Control</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Shift + Left Click</td>
+              <td>Creates a single new point mass</td>
+            </tr>
+            <tr>
+              <td>Left Click and Drag</td>
+              <td>Exerts some force on the point masses near the mouse cursor in the direction of its movement</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

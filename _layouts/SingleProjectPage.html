@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {{ project.title }}
+    </title>
+    {% include 'BootstrapSources.html' %}
+    <link href="{{ STATIC_URL }}css/github_banner.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    {% include 'NavBar.html' %}
+    <div id="banner"><a href="{{ project.source_link }}">Fork me on GitHub</a></div>
+    <div class="container">
+      <div class="well">
+        <div>
+          <h3>{{ project.title }}</h3>
+        </div>
+      </div>
+      <div>
+        <h6>Get the source here: <a href="{{ project.source_link }}">Source Code</a></h6>
+      </div>
+      <div class="well">
+        <div class="content font-size: 13px;">
+          {{ project.description|safe }}
+        </div>
+      </div>
+      <div class="well">
+        {{ project.commits }}
+      </div>
+    </div>
+  </body>
+</html>
